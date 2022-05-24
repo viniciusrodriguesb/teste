@@ -1,0 +1,42 @@
+package Calculadora;
+
+import java.util.Scanner;
+
+public class App{
+
+	public static void main(String[] args) {
+		double primeiroNumero, segundoNumero;
+		String operacao, escolha;
+		Calculadora calculadora = new Calculadora();
+		Scanner teclado = new Scanner(System.in);
+
+
+		System.out.println("Digite o primeiro valor: ");
+		primeiroNumero = teclado.nextDouble();
+
+		System.out.println("Digite o segundo valor: ");
+		segundoNumero = teclado.nextDouble();
+
+		do {
+			System.out.println("Escolha uma das operações: (+, -, *, /)");
+			operacao = teclado.next();
+
+			// operacao é um objeto e quando se usa um scanner ele captura o objeto,
+			// na hora do scanner comparar o tipo ele compara string com objeto
+			// já no equals ele compara o conteudo;
+
+			if (operacao.equals("+")) {
+				System.out.println("A soma é: " + calculadora.somar(primeiroNumero, segundoNumero));
+			} else if (operacao.equals("-")) {
+				System.out.println("A subtração é: " + calculadora.subtrair(primeiroNumero, segundoNumero));
+			} else if (operacao.equals("*")) {
+				System.out.println("A multiplicação é: " + calculadora.multiplicar(primeiroNumero, segundoNumero));
+			} else {
+				System.out.println("A divisão é: " + calculadora.dividir(primeiroNumero, segundoNumero));
+			}
+			System.out.println("Deseja realizar outra operação? (S/N)");
+			escolha = teclado.next();
+		} while (escolha.equals("S"));
+		teclado.close();
+	}
+}

@@ -1,0 +1,5 @@
+package Calculadora;
+
+public static void class nome(String mensagem){
+	System.out.println(mensagem);
+}

@@ -1,0 +1,18 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class CaptchaAula {
+
+	public static void main(String[] args) {
+		Random generator = new Random();
+		Scanner teclado = new Scanner();
+		double numero;
+		String letras;
+		
+		System.out.println("Digite o CAPTCHA escrito acima: ");
+		numero = teclado.nextDouble();
+		letras = teclado.next();
+
+	}
+
+}

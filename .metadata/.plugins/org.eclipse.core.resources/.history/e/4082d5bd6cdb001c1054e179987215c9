@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class CaptchaAula {
+
+	public static void main(String[] args) {
+		Random generator = new Random();
+		
+		System.out.println("Digite o valor escrito acima: ");
+
+	}
+
+}
