@@ -1,0 +1,20 @@
+
+public class CorrecaoCaptcha {
+
+	public static void main(String[] args) {
+		String entrada;
+		String captcha = "B33A3D";
+		boolean continua = true;
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		do {
+			System.out.println("-------------");
+			System.out.println(captcha);
+			System.out.println("-------------");
+			System.out.println("Digite o código acima: ");
+		}
+
+	}
+
+}
